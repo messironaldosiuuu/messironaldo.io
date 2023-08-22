@@ -1,0 +1,42 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   background: radial-gradient(circle, #fde5f9,#ffc3a0);
+    margin: 0;
+  }
+  
+  .card {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #e60073;
+    margin-bottom: 10px;
+  }
+  
+.butterfly {
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    left: -50px; /* Posición inicial en el lado izquierdo */
+    animation: flutter 3s infinite alternate-reverse;
+  }
+  
+  @keyframes flutter {
+    0%, 100% {
+      transform: translateY(-50%) translateX(0); /* Posición inicial */
+    }
+    50% {
+      transform: translateY(-60%) translateX(300px); /* Posición a la mitad del recorrido */
+    }
+  }
+ 
+  
+  
